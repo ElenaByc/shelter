@@ -10,14 +10,29 @@
     <link rel="stylesheet" href="../../styles/style.css">
 </head>
 <body>
-    <div class="page-wrapper">
-        <header class ="header">
-          <h1>Header</h1>
+    <div class="content-wrapper">
+        <header class="header">
+            <a href="../main/index.html">
+                <div class="header__logo">
+                    <h1 class="header__title">Cozy House</h1>
+                    <h4 class="header__subtitle">Shelter for pets in Boston</h4>
+                </div>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="nav-link active"><a href="#">About the shelter</a></li>
+                    <li class="nav-link"><a href="../pets/index.html">Our pets</a></li>
+                    <li class="nav-link"><a href="#help">Help the shelter</a></li>
+                    <li class="nav-link"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main class="main">
-            <section class="section hero">
-                <h2>section hero</h2>
+            <section class="section start-screen">
+                <div class="start-screen__content">
+                    <h2>Not only people need a house</h2>
+                </div>
             </section>
 
             <section class="section about">
@@ -39,7 +54,7 @@
      
         </main>
 
-        <footer class="footer">
+        <footer class="footer" id="contacts">
             <h2>Footer</h2>
         </footer>
     </div>
