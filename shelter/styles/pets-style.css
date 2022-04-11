@@ -1,0 +1,27 @@
+/* ---------- Header ---------- */
+.header {
+    position: sticky;
+    top: 0;
+	background-color: var(--color-white);
+    padding: 30px 40px;
+}
+
+.header__title {
+    color: var(--color-dark-l);
+}
+
+.header__subtitle {
+    color: var(--color-dark-3xl);
+}
+
+.nav-link {
+    color: var(--color-dark-l);
+}
+
+.nav-link :hover {
+    color: var(--color-dark-3xl);
+}
+
+.nav-link.active a {
+    color: var(--color-dark-3xl);
+}

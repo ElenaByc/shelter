@@ -16,6 +16,8 @@
     --color-light: #F6F6F6;
     --color-light-s: #FAFAFA;
     --color-dark-s: #CDCDCD;
+    --color-dark-l: #545454;
+    --color-dark-3xl: #292929;
     --color-primary: #F1CDB3;
 
     --font-size-h1: 32px;
@@ -69,6 +71,12 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 1280px;
+}
+
+.header.pets {
+    position: sticky;
+	background-color: var(--color-white);
+  	top: 0;
 }
 
 .header__title {
