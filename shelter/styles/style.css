@@ -1,0 +1,21 @@
+:root {
+	--color-black: #000000;
+	--color-white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-black);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+	width: 1280px;
+	margin: 0 auto;
+    background-color: var(--color-white);
+}
