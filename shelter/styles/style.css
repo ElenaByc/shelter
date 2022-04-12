@@ -289,8 +289,26 @@ p {
 }
 
 /* ---------- Section Help ---------- */
+.help {
+    background-color: var(--color-white);
+}
 
 .help h3 {
     text-align: center;
 }
 
+/* ---------- Section Donation ---------- */
+
+.donation {
+    background-color: var(--color-light-l);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.donation__content {
+    width: 380px;
+}
+
+/* ---------- Footer ---------- */
