@@ -100,6 +100,21 @@ p {
     background-color: var(--color-primary-light);
 }
 
+.circle-btn {
+    padding: 23px 19px;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    color: var(--color-dark-3xl);
+}
+
+.circle-btn:hover {
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+}
+
 .content-wrapper {
 	width: 1280px;
 	margin: 0 auto;
@@ -234,11 +249,48 @@ p {
 
 /* ---------- Section Our Friends ---------- */
 
-.our-friends {
+.friends {
     background-color: var(--color-light-l);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 60px;
 }
 
-.our-friends h3 {
+.friends h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.left-arrow {
+    background-image: url(../assets/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-arrow {
+    background-image: url(../assets/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scaleX(-1);
+}
+
+.friends__slider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.friends__cards-container {
+    height: 435px;
+}
+
+/* ---------- Section Help ---------- */
+
+.help h3 {
     text-align: center;
 }
 
