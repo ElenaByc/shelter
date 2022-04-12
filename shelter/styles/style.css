@@ -50,6 +50,55 @@ a {
     color: unset;
 }
 
+
+h2 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: var(--color-dark-l)
+}
+
+p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--color-dark-s);
+    margin-bottom: 56px;
+}
+
+.button {
+    background-color: var(--color-primary);
+    border-radius: 100px;
+    padding: 15px 45px;
+    color: var(--color-dark-3xl);
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--color-primary-light);
+}
+
 .content-wrapper {
 	width: 1280px;
 	margin: 0 auto;
@@ -151,40 +200,19 @@ a {
     margin-bottom: 95px;
 }
 
-h2 {
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 130%;
-    color: var(--color-white);
-    margin-bottom: 40px;
+/* ---------- Section About ---------- */
+
+.about {
+    padding: 100px 50px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-p {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    color: var(--color-dark-s);
-    margin-bottom: 56px;
+.about__content {
+    width: 430px;
+    margin-bottom: 95px;
 }
 
-.button {
-    background-color: var(--color-primary);
-    border-radius: 100px;
-    padding: 15px 45px;
-    color: var(--color-dark-3xl);
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    text-align: center;
-}
-
-.button:hover {
-    background-color: var(--color-primary-light);
-}
