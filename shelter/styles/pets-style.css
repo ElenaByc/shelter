@@ -28,8 +28,48 @@
 
 /* ---------- Section Friends ---------- */
 
+.friends {
+    row-gap: 30px;
+}
+
+.friends h3 {
+    margin-bottom: 30px;
+}
+
 .friends__cards-container {
     justify-content: space-between;
     flex-wrap: wrap;
     height: 930px;
+}
+
+.friends__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    column-gap: 20px;
+}
+
+.friends__navigation h4 {
+    color: var(--color-dark-3xl);
+    text-align: center;
+}
+
+.circle-btn {
+    padding: 12px 0;
+}
+
+.circle-btn.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    cursor: auto;
+}
+
+.circle-btn.inactive {
+    background-color: transparent;
+    border-color: var(--color-dark-s);
+    cursor: auto;
+}
+
+.circle-btn.inactive h4 {
+    color: var(--color-dark-s);
 }
