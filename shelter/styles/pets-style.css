@@ -27,3 +27,9 @@
 }
 
 /* ---------- Section Friends ---------- */
+
+.friends__cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 930px;
+}
