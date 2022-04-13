@@ -353,8 +353,99 @@ p {
 }
 
 .help__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 55px;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    
     height: 281px;
+    width: 100%;
 }
+
+.help__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 113px;
+}
+
+.icon-food {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-pet-food.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-toys {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-toys.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-bowls {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-bowls-and-cups.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-shampoos {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-shampoos.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-vitamins {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-vitamins.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-medicines {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-medicines.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-collars {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-collars-leashes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-sleep {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-sleeping-area.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-transport {
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/icons/icon-transportation.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /* ---------- Section Donation ---------- */
 
