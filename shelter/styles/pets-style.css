@@ -14,11 +14,11 @@
     color: var(--color-dark-3xl);
 }
 
-.nav-link {
+.nav-link a {
     color: var(--color-dark-l);
 }
 
-.nav-link :hover {
+.nav-link:hover a{
     color: var(--color-dark-3xl);
 }
 

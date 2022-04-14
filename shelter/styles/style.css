@@ -206,7 +206,11 @@ p {
     padding: 0;
 }
 
-.nav-link:hover {
+.nav-link a {
+    color: var(--color-dark-s);
+}
+
+.nav-link:hover a{
     color: var(--color-light-s);
 }
 
