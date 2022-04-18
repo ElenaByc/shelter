@@ -2,7 +2,7 @@
 .header {
     position: sticky;
     top: 0;
-	background-color: var(--color-white);
+    background-color: var(--color-white);
     padding: 30px 40px;
 }
 
@@ -18,7 +18,7 @@
     color: var(--color-dark-l);
 }
 
-.nav-link:hover a { 
+.nav-link:hover a {
     color: var(--color-dark-3xl);
 }
 
@@ -39,7 +39,7 @@
 .friends__cards-container {
     justify-content: space-between;
     flex-wrap: wrap;
-    /* height: 930px; */
+    margin-bottom: 30px;
 }
 
 .friends__navigation {
@@ -72,4 +72,32 @@
 
 .circle-btn.inactive h4 {
     color: var(--color-dark-s);
+}
+
+/* ---------- max-width: 1279px ---------- */
+
+@media (max-width: 1279.98px) {
+
+    .header {
+        padding: 3.90625% 30px;
+    }
+
+    .friends {
+        padding-bottom: 76px;
+    }
+
+    .friends h3 {
+        margin-bottom: 0;
+    }
+
+    .friends__cards-container {
+        justify-content: center;
+        column-gap: 40px;
+        margin-bottom: 10px;
+    }
+
+    .card:nth-child(7),
+    .card:nth-child(8) {
+        display: none;
+    }
 }

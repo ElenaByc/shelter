@@ -602,7 +602,7 @@ p {
     }
 
     .header {
-        padding: 4.6875% 30px;
+        padding: 3.90625% 30px;
     }
 
     .not-only {
@@ -675,14 +675,12 @@ p {
     }
 }
 
-/* ---------- max-width: 768px ---------- */
+/* ---------- max-width: 767px ---------- */
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
 
     .header {
         padding: 30px 30px;
     }
-
-
 
 }
