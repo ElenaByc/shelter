@@ -563,6 +563,7 @@ p {
 }
 
 .icon-email {
+    flex: 0 0 40px;
     width: 40px;
     height: 32px;
     background-image: url(../assets/icons/icon-email.svg);
@@ -571,6 +572,7 @@ p {
 }
 
 .icon-phone {
+    flex: 0 0 40px;
     width: 40px;
     height: 32px;
     background-image: url(../assets/icons/icon-phone.svg);
@@ -579,6 +581,7 @@ p {
 }
 
 .icon-location {
+    flex: 0 0 22px;
     width: 22px;
     height: 32px;
     background-image: url(../assets/icons/icon-marker.svg);
@@ -594,7 +597,6 @@ p {
 
 @media (max-width: 1279.98px) {
 
-    .footer,
     .section {
         padding: 80px 30px 100px;
     }
@@ -656,6 +658,21 @@ p {
         row-gap: 60px;
     }
 
+    .footer {
+        padding-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 60px;
+        row-gap: 24px;
+    }
+
+    .footer__locations h3 {
+        margin-bottom: 32px;
+    }
+
+    .locations__link {
+        margin-bottom: 33px;
+    }
 }
 
 /* ---------- max-width: 768px ---------- */
@@ -665,6 +682,7 @@ p {
     .header {
         padding: 30px 30px;
     }
+
 
 
 }
