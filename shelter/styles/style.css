@@ -622,6 +622,19 @@ p {
         margin-left: auto;
     }
 
+    .about {
+        flex-direction: column;
+        row-gap: 80px;
+    }
+
+    .about__content {
+        order: 1;
+    }
+
+    .about__img {
+        order: 2;
+    }
+
 }
 
 /* ---------- max-width: 768px ---------- */
