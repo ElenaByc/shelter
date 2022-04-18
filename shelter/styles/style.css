@@ -596,17 +596,30 @@ p {
 
 @media (max-width: 1279.98px) {
 
+    .footer,
+    .section {
+        padding: 80px 30px 100px;
+    }
+
     .header {
         padding: 4.6875% 30px;
     }
 
     .not-only {
         padding-top: 19.53125%;
+        padding-bottom: 0;
         flex-direction: column;
     }
 
     .not-only__content {
         align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .not-only__img {
+        width: 80.37%;
+        height: auto;
+        margin-left: auto;
     }
 
 }
