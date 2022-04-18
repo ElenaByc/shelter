@@ -651,6 +651,11 @@ p {
         width: 170px;
     }
 
+    .donation {
+        flex-direction: column-reverse;
+        row-gap: 60px;
+    }
+
 }
 
 /* ---------- max-width: 768px ---------- */
