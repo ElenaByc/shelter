@@ -18,7 +18,7 @@
     color: var(--color-dark-l);
 }
 
-.nav-link:hover a{
+.nav-link:hover a { 
     color: var(--color-dark-3xl);
 }
 
@@ -39,7 +39,7 @@
 .friends__cards-container {
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 930px;
+    /* height: 930px; */
 }
 
 .friends__navigation {
