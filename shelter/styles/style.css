@@ -323,7 +323,7 @@ p {
 .card {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 29px;
     align-items: center;
     width: 270px;
     height: 435px;
@@ -366,8 +366,6 @@ p {
     align-items: center;
     align-content: space-between;
     justify-content: center;
-
-    height: 281px;
     width: 100%;
 }
 
@@ -643,6 +641,14 @@ p {
     .friends__cards-container {
         justify-content: center;
         column-gap: 40px;
+    }
+
+    .help__container {
+        column-gap: 60px;
+    }
+
+    .help__item {
+        width: 170px;
     }
 
 }
