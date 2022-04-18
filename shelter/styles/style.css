@@ -123,6 +123,7 @@ p {
 }
 
 .circle-btn {
+    flex: 0 0 52px;
     padding: 23px 19px;
     width: 52px;
     height: 52px;
@@ -316,14 +317,13 @@ p {
     flex-direction: row;
     justify-content: space-around;
     row-gap: 30px;
-    /* height: 435px; */
     width: 100%;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    row-gap: 29px;
+    row-gap: 30px;
     align-items: center;
     width: 270px;
     height: 435px;
@@ -628,11 +628,21 @@ p {
     }
 
     .about__content {
+        padding-top: 1px;
         order: 1;
     }
 
     .about__img {
         order: 2;
+    }
+
+    .card:last-child {
+        display: none;
+    }
+
+    .friends__cards-container {
+        justify-content: center;
+        column-gap: 40px;
     }
 
 }
