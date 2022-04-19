@@ -379,76 +379,48 @@ p {
     height: 113px;
 }
 
-.icon-food {
+.help__icon {
     width: 60px;
     height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.food {
     background-image: url(../assets/icons/icon-pet-food.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-toys {
-    width: 60px;
-    height: 60px;
+.toys {
     background-image: url(../assets/icons/icon-toys.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-bowls {
-    width: 60px;
-    height: 60px;
+.bowls {
     background-image: url(../assets/icons/icon-bowls-and-cups.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-shampoos {
-    width: 60px;
-    height: 60px;
+.shampoos {
     background-image: url(../assets/icons/icon-shampoos.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-vitamins {
-    width: 60px;
-    height: 60px;
+.vitamins {
     background-image: url(../assets/icons/icon-vitamins.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-medicines {
-    width: 60px;
-    height: 60px;
+.medicines {
     background-image: url(../assets/icons/icon-medicines.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-collars {
-    width: 60px;
-    height: 60px;
+.collars {
     background-image: url(../assets/icons/icon-collars-leashes.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-sleep {
-    width: 60px;
-    height: 60px;
+.sleep {
     background-image: url(../assets/icons/icon-sleeping-area.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.icon-transport {
-    width: 60px;
-    height: 60px;
+.transport {
     background-image: url(../assets/icons/icon-transportation.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 
@@ -772,6 +744,7 @@ p {
     .about__content {
         align-items: center;
         width: 270px;
+        /* width: 90%; */
     }
 
     .about__content h3 {
@@ -809,7 +782,7 @@ p {
 
     .friends__cards-container {
         order: 1;
-        width: 300px;
+        width: 100%;
     }
 
     .friends h3 {
@@ -825,6 +798,33 @@ p {
         display: none;
     }
 
+    .help h3 {
+        margin-bottom: 40px;
+    }
 
+    .help__container {
+        width: 300px;
+        margin: 0 auto;
+        justify-content: flex-start;
+        padding: 1px 5px 0;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .help__item {
+        width: 130px;
+        height: 87px;
+    }
+
+    .help__item h4 {
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+    }
+
+    .help__icon {
+        width: 50px;
+        height: 50px;
+    }
 
 }
