@@ -773,7 +773,8 @@ p {
     }
 
     .about__img {
-        width: 86.67%;
+        width: 260px;
+        height: auto;
     }
 
     .friends {
@@ -877,7 +878,7 @@ p {
     }
 
     .donation__img {
-        width: 86.67%;
+        width: 260px;
         height: auto;
     }
 
@@ -909,7 +910,7 @@ p {
     }
 
     .footer__img {
-        width: 86.67%;
+        width: 260px;
         height: auto;
     }
 }
