@@ -482,6 +482,11 @@ p {
     background-position: center;
 }
 
+.donation__img {
+    width: 505px;
+    height: auto;
+}
+
 /* ---------- Footer ---------- */
 
 .footer {
@@ -659,6 +664,13 @@ p {
         text-align: center;
     }
 
+    h5 {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
     .section {
         padding: 42px 10px 43px;
     }
@@ -825,6 +837,44 @@ p {
     .help__icon {
         width: 50px;
         height: 50px;
+    }
+
+    .donation {
+        row-gap: 43px;
+    }
+
+    .donation__content {
+        width: 300px;
+        padding: 0;
+    }
+
+    .donation__content h3 {
+        margin-bottom: 19px;
+    }
+
+    .donation__content h5 {
+        margin-bottom: 21px;
+    }
+
+    .donation__credit-card {
+        width: 281px;
+        margin: 0 auto 20px;
+    }
+
+    .donation__credit-card h4 {
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+    }
+
+    .donation__content p {
+        padding: 0 10px; 
+        text-align: justify;
+    }
+
+    .donation__img {
+        width: 86.67%;
+        height: auto;
     }
 
 }
