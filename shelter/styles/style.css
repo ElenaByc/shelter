@@ -163,6 +163,7 @@ p {
     align-items: center;
     max-width: 1280px;
     width: 100%;
+    z-index: 1;
 }
 
 .header__title {
@@ -761,18 +762,17 @@ p {
 
     .shadow-box {
         display: block;
+        opacity: 0;
         position: fixed;
         top: 0;
-        right: -620px;
-        height: 100vh;
-        width: 10px;
+        left: 0;
         transition: 1s;
-        overflow-x: hidden;
         background-color: rgba(41, 41, 41, 0.6);
     }
 
     .shadow-box.active {
-        right: 0;
+        opacity: 1;
+        height: 100vh;
         width: 100vw;
         z-index: 1;
         cursor: pointer;
