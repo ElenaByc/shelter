@@ -123,6 +123,11 @@
         background-color: var(--color-dark-l);
     }
 
+    .header__nav-list,
+    .header__nav-list.active {
+        background-color: var(--color-white);
+    }
+
     .friends {
         row-gap: 41px;
         padding-bottom: 44px;
