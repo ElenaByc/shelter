@@ -115,11 +115,11 @@
         margin-bottom: 9px;
     }
 
-    .header__nav-menu .line {
+    .header__burger-btn .line {
         background-color: var(--color-black);
     }
 
-    .header__nav-menu:hover .line {
+    .header__burger-btn:hover .line {
         background-color: var(--color-dark-l);
     }
 
