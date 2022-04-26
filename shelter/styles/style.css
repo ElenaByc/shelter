@@ -695,6 +695,10 @@ p {
         column-gap: 20px;
     }
 
+    body.active {
+        overflow: hidden;
+    }
+
     .header.active .header__logo  {
         animation: moveLogo 2s forwards;
     }

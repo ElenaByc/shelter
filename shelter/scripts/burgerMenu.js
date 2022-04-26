@@ -4,12 +4,14 @@ export const burgerMenu = () => {
 	const navLinks = document.getElementsByClassName("nav-link");
 	const shadow = document.getElementsByClassName("shadow-box")[0];
 	const header = document.getElementsByClassName("header")[0];
+	const body = document.getElementsByTagName("body")[0];
 
 	const toggleMenu = () => {
 		burgerBtn.classList.toggle("active");
 		navList.classList.toggle("active");
 		shadow.classList.toggle("active");
 		header.classList.toggle("active");
+		body.classList.toggle("active");
 	};
 
 	burgerBtn.addEventListener("click", toggleMenu);
