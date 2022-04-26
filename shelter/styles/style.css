@@ -685,9 +685,11 @@ p {
 
     .header {
         padding: 30px 10px;
+        height: 120px;
     }
 
     .header.active {
+        position: fixed;
         justify-content: end;
         column-gap: 20px;
     }
