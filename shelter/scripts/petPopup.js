@@ -20,6 +20,8 @@ export const petPopup = () => {
 			name.innerHTML = pet.name;
 			let typeAndBreed = popup.getElementsByTagName("h4")[0];
 			typeAndBreed.innerHTML = `${pet.type} - ${pet.breed}`;
+      let description = popup.getElementsByTagName("p")[0];
+      description.innerHTML = pet.description;
 		}
 		popupShadow.classList.toggle("active");
 		body.classList.toggle("scrollblock");
