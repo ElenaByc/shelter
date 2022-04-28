@@ -7,9 +7,6 @@ export const petPopup = () => {
 	const popupShadow = document.getElementsByClassName("popup-shadow")[0];
 
 	const togglePopup = (event) => {
-		console.log("popup!");
-		console.log(popup);
-
 		const clickedCard = event.target.closest(".card");
 		if (clickedCard) {
 			// open, generate popup content
@@ -22,6 +19,8 @@ export const petPopup = () => {
 			typeAndBreed.innerHTML = `${pet.type} - ${pet.breed}`;
       let description = popup.getElementsByTagName("p")[0];
       description.innerHTML = pet.description;
+      let age = popup.getElementsByClassName("age")[0];
+      age.innerHTML = pet.age;
 		}
 		popupShadow.classList.toggle("active");
 		body.classList.toggle("scrollblock");
