@@ -7,11 +7,13 @@ export const burgerMenu = () => {
 	const body = document.getElementsByTagName("body")[0];
 
 	const toggleMenu = () => {
-		burgerBtn.classList.toggle("active");
-		navList.classList.toggle("active");
-		menuShadow.classList.toggle("active");
-		header.classList.toggle("active");
-		body.classList.toggle("scrollblock");
+		if (window.screen.width < 768) {
+			burgerBtn.classList.toggle("active");
+			navList.classList.toggle("active");
+			menuShadow.classList.toggle("active");
+			header.classList.toggle("active");
+			body.classList.toggle("scrollblock");
+		}
 	};
 
 	burgerBtn.addEventListener("click", toggleMenu);
