@@ -417,7 +417,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 9px;
+    border-radius: 9px 0 0 9px;
 }
 
 .popup__content {
@@ -440,7 +440,38 @@ p {
 }
 
 .popup__content ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     padding: 5px 15px;
+    list-style: none;
+}
+
+.popup__content ul li {
+    font-family: Georgia;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+}
+
+.popup__content ul li::before {
+    content: "\2022";
+    color: var(--color-primary);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.popup__content ul li b {
+    font-family: Georgia;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.1em;
 }
 
 /* ---------- Section Help ---------- */
@@ -751,6 +782,10 @@ p {
         margin-bottom: 5px;
     }
 
+    .popup__content ul {
+        row-gap: 5px;
+    }
+
     .help__container {
         column-gap: 60px;
     }
@@ -990,12 +1025,36 @@ p {
     }
 
     .close {
-        left: calc((100vw + 240px) / 2 - 10px);
-        top: calc((100vh - 340px) / 2 - 50px);
+        left: calc((100vw + 240px) / 2 - 22px);
+        top: calc((100vh - 340px) / 2 - 52px);
     }
 
     .popup__img {
         display: none;
+    }
+
+    .popup__content {
+        padding: 10px;
+    }
+
+    .popup__content h3 {
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+        margin: 0 auto;
+    }
+
+    .popup__content h4 {
+        margin: 0 auto;
+    }
+
+    .popup__content p {
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+
+    .popup__content ul {
+        row-gap: 5px;
     }
 
     .help h3 {

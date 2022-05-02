@@ -17,10 +17,16 @@ export const petPopup = () => {
 			name.innerHTML = pet.name;
 			let typeAndBreed = popup.getElementsByTagName("h4")[0];
 			typeAndBreed.innerHTML = `${pet.type} - ${pet.breed}`;
-      let description = popup.getElementsByTagName("p")[0];
-      description.innerHTML = pet.description;
-      let age = popup.getElementsByClassName("age")[0];
-      age.innerHTML = pet.age;
+			let description = popup.getElementsByTagName("p")[0];
+			description.innerHTML = pet.description;
+			let age = popup.getElementsByClassName("age")[0];
+			age.innerHTML = pet.age;
+      let inoculations = popup.getElementsByClassName("inoculations")[0];
+			inoculations.innerHTML = pet.inoculations;
+      let diseases = popup.getElementsByClassName("diseases")[0];
+			diseases.innerHTML = pet.diseases;
+      let parasites = popup.getElementsByClassName("parasites")[0];
+			parasites.innerHTML = pet.parasites;
 		}
 		popupShadow.classList.toggle("active");
 		body.classList.toggle("scrollblock");
