@@ -380,7 +380,6 @@ p {
     transition: all 1s ease 0s;
     background-color: var(--color-light-s);
     border-radius: 9px;
-
 }
 
 .card__popup.open {
@@ -1019,7 +1018,8 @@ p {
         flex-direction: column;
         justify-items: center;
         width: 240px;
-        height: 340px;
+        min-height: 340px;
+        height: fit-content;
         left: calc((100vw - 240px) / 2);
         top: calc((100vh - 340px) / 2);
     }
