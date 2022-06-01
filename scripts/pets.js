@@ -13,7 +13,7 @@ export const pets =
   },
   {
     "name": "Sophia",
-    "img": "../../assets/images/pets-sophia.png",
+    "img": "../../assets/images/pets-sophia2.png",
     "type": "Dog",
     "breed": "Shih tzu",
     "description": "Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
