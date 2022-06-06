@@ -1,6 +1,4 @@
-import { pets } from "./pets.js";
-
-export const petPopup = () => {
+export const petPopup = (pets) => {
 	const body = document.getElementsByTagName("body")[0];
 	const petsCards = document.getElementsByClassName("card");
 	const popup = document.getElementsByClassName("card__popup")[0];

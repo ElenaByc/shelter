@@ -40,6 +40,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    padding: 0;
 }
 
 .friends__navigation {
