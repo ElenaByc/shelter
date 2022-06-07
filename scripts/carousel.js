@@ -34,10 +34,19 @@ export const carousel = (petsArray) => {
 			ITEM_LEFT.innerHTML = ITEM_CENTER.innerHTML;
 		}
 
-    let changedItemIds = [...changedItem.getElementsByClassName("card")].map(el => el.id);
-    console.log(changedItemIds);
-
+		const itemIds = [...changedItem.getElementsByClassName("card")].map((el) => Number(el.id));
+		console.log(itemIds);
 		ITEM_CENTER.innerHTML = changedItem.innerHTML;
+		changedItem.innerHTML = "";
+		for (let i = 0; i < 3; i++) {
+			let petId = Math.floor(Math.random() * 8);
+			while (itemIds.includes(petId)) {
+				petId = Math.floor(Math.random() * 8);
+			}
+      itemIds.push(petId);
+			const card = createPetCard(petId, petsArray);
+			changedItem.appendChild(card);
+		}
 
 		BTN_LEFT.addEventListener("click", moveLeft);
 		BTN_RIGHT.addEventListener("click", moveRight);

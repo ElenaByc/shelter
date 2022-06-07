@@ -17,7 +17,7 @@ export function createElementWithId(elemType, classNames, id, innerText) {
 
 export function createImageElement(classNames, imageUrl, altTxt) {
 	const elem = createElement("img", classNames);
-	elem.setAttribute("src", `./assets/images/${imageUrl}`);
+	elem.setAttribute("src", imageUrl);
 	elem.setAttribute("alt", altTxt);
 	return elem;
 }
@@ -28,16 +28,4 @@ export function addNewElement(parentElem, elemType, classNames, innerText) {
 
 export function addNewImageElement(parentElem, classNames, imageUrl, altTxt) {
 	parentElem.appendChild(createImageElement(classNames, imageUrl, altTxt));
-}
-
-export function addNewButton(parentElem, btnText, action) {
-  const btn = createElement("div", "button", btnText);
-  btn.addEventListener("click", action);
-  parentElem.appendChild(btn);
-}
-
-export function addNewElementWithAction(parentElem, elemType, classNames, action) {
-    const elem = createElement(elemType, classNames);
-    elem.addEventListener("click", action);
-    parentElem.appendChild(elem);
 }
