@@ -329,7 +329,7 @@ p {
     position: absolute;
     left: 0;
     top: calc(50% - 52px/2);
-    z-index: 2;
+    z-index: 1;
 }
 
 .right-arrow {
@@ -340,7 +340,7 @@ p {
     position: absolute;
     right: 0;
     top: calc(50% - 52px/2);
-    z-index: 2;
+    z-index: 1;
 }
 
 .carousel-wrapper {
@@ -421,6 +421,12 @@ p {
 .card:hover .button {
     background-color: var(--color-primary-light);
     border-color: var(--color-primary-light);
+}
+
+.card__img {
+    width: 270px;
+    height: 270px;
+    border-radius: 9px 9px 0px 0px;
 }
 
 .button.transparent {

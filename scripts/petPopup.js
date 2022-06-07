@@ -42,7 +42,7 @@ export const petPopup = (pets) => {
 			body.style.paddingRight = "0px";
 			body.classList.remove("scrollblock");
 		}, timeout);
-    unlock = false;
+		unlock = false;
 		setTimeout(() => {
 			unlock = true;
 		}, timeout);
@@ -51,7 +51,7 @@ export const petPopup = (pets) => {
 	const popupOpen = (event) => {
 		const clickedCard = event.target.closest(".card");
 		if (clickedCard && unlock) {
-			let pet = pets.find((el) => el.name === clickedCard.id);
+			let pet = pets.find((el) => el.id === Number(clickedCard.id));
 			getPetData(pet);
 			bodyLock();
 			popupShadow.classList.add("active");
