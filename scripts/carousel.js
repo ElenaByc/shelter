@@ -34,6 +34,9 @@ export const carousel = (petsArray) => {
 			ITEM_LEFT.innerHTML = ITEM_CENTER.innerHTML;
 		}
 
+    let changedItemIds = [...changedItem.getElementsByClassName("card")].map(el => el.id);
+    console.log(changedItemIds);
+
 		ITEM_CENTER.innerHTML = changedItem.innerHTML;
 
 		BTN_LEFT.addEventListener("click", moveLeft);

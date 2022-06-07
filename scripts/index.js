@@ -6,7 +6,6 @@ import { carousel } from "./carousel.js";
 let petsArray = [];
 getPetsArray(petsArray);
 
-
 burgerMenu();
 petPopup(petsArray);
 
