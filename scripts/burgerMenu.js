@@ -7,6 +7,9 @@ export const burgerMenu = () => {
 	const body = document.getElementsByTagName("body")[0];
 
 	const toggleMenu = () => {
+    // console.log(window.screen.width);
+    // console.log(window.screen.availWidth);
+    // console.log(window.innerWidth);
 		if (window.screen.width < 768) {
 			burgerBtn.classList.toggle("active");
 			navList.classList.toggle("active");

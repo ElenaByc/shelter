@@ -32,7 +32,7 @@
     row-gap: 30px;
 }
 
-.friends h3 {
+.friends__title {
     margin-bottom: 30px;
 }
 
@@ -40,6 +40,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    padding: 0;
 }
 
 .friends__navigation {
