@@ -35,7 +35,6 @@ export const carousel = (petsArray) => {
 		}
 
 		const itemIds = [...changedItem.getElementsByClassName("card")].map((el) => Number(el.id));
-		console.log(itemIds);
 		ITEM_CENTER.innerHTML = changedItem.innerHTML;
 		changedItem.innerHTML = "";
 		for (let i = 0; i < 3; i++) {

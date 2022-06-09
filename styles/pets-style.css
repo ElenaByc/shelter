@@ -97,8 +97,13 @@
         margin-bottom: 10px;
     }
 
+    .card:last-child {
+        display: flex;
+    }
+
     .card:nth-child(7),
-    .card:nth-child(8) {
+    .card:nth-child(8),
+    .card:nth-child(9) {
         display: none;
     }
 }
