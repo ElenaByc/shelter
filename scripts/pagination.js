@@ -110,19 +110,30 @@ export const pagination = (petsArray) => {
 		displayCards(currentPage);
 	};
 
-	const displayCards = (page) => {
-		const cards = document.getElementsByClassName("card");
-		for (let i = 0; i < cards.length; i++) {
-			cards[i].classList.add("fade");
-		}
-		setTimeout(() => {
+	const displayCards = (page, firstTime) => {
+		if (firstTime) {
 			CONTAINER.innerHTML = "";
 			allIdsArray.slice((page - 1) * cardsPerPage, page * cardsPerPage).forEach((petId) => {
 				const card = createPetCard(petId, petsArray);
 				CONTAINER.appendChild(card);
-        petPopup(petsArray);
+				petPopup(petsArray);
 			});
-		}, 500);
+		} else {
+			const cards = document.getElementsByClassName("card");
+			for (let i = 0; i < cards.length; i++) {
+				cards[i].classList.add("fade");
+			}
+			setTimeout(() => {
+				CONTAINER.innerHTML = "";
+				allIdsArray
+					.slice((page - 1) * cardsPerPage, page * cardsPerPage)
+					.forEach((petId) => {
+						const card = createPetCard(petId, petsArray);
+						CONTAINER.appendChild(card);
+						petPopup(petsArray);
+					});
+			}, 500);
+		}
 	};
 
 	if (SCREEN_WIDTH >= 1280) {
@@ -136,7 +147,7 @@ export const pagination = (petsArray) => {
 
 	const allIdsArray = createAllIdsArray();
 	console.log(allIdsArray);
-	displayCards(currentPage);
+	displayCards(currentPage, true);
 	petPopup(petsArray);
 
 	BTN_PREV.addEventListener("click", prevPage);
