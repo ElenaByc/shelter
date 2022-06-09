@@ -76,7 +76,6 @@ export const pagination = (petsArray) => {
 			lockLeftButtons();
 		}
 		displayCards(currentPage);
-		petPopup(petsArray);
 	};
 
 	const nextPage = () => {
@@ -89,7 +88,6 @@ export const pagination = (petsArray) => {
 			lockRightButtons();
 		}
 		displayCards(currentPage);
-		petPopup(petsArray);
 	};
 
 	const firstPage = () => {
@@ -100,7 +98,6 @@ export const pagination = (petsArray) => {
 		BTN_CURRENT.innerHTML = "<h4>1</h4>";
 		lockLeftButtons();
 		displayCards(currentPage);
-		petPopup(petsArray);
 	};
 
 	const lastPage = () => {
@@ -111,15 +108,21 @@ export const pagination = (petsArray) => {
 		BTN_CURRENT.innerHTML = `<h4>${lastPageNumber}</h4>`;
 		lockRightButtons();
 		displayCards(currentPage);
-		petPopup(petsArray);
 	};
 
 	const displayCards = (page) => {
-		CONTAINER.innerHTML = "";
-		allIdsArray.slice((page - 1) * cardsPerPage, page * cardsPerPage).forEach((petId) => {
-			const card = createPetCard(petId, petsArray);
-			CONTAINER.appendChild(card);
-		});
+		const cards = document.getElementsByClassName("card");
+		for (let i = 0; i < cards.length; i++) {
+			cards[i].classList.add("fade");
+		}
+		setTimeout(() => {
+			CONTAINER.innerHTML = "";
+			allIdsArray.slice((page - 1) * cardsPerPage, page * cardsPerPage).forEach((petId) => {
+				const card = createPetCard(petId, petsArray);
+				CONTAINER.appendChild(card);
+        petPopup(petsArray);
+			});
+		}, 500);
 	};
 
 	if (SCREEN_WIDTH >= 1280) {
