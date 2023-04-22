@@ -42,7 +42,7 @@ export const carousel = (petsArray) => {
 			while (itemIds.includes(petId)) {
 				petId = Math.floor(Math.random() * 8);
 			}
-      itemIds.push(petId);
+			itemIds.push(petId);
 			const card = createPetCard(petId, petsArray);
 			changedItem.appendChild(card);
 		}
